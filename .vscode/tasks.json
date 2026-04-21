@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Open with Live Server",
+			"type": "shell",
+			"command": "cmd /c start \"\" \"${env:LOCALAPPDATA}\\Programs\\Microsoft VS Code\\Code.exe\" --open-url \"vscode://ritwickdey.liveserver/launch\"",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Live Server",
+			"type": "shell",
+			"command": "npx live-server .",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
